@@ -153,4 +153,6 @@ dmypy.json
 cython_debug/
 
 # raw data
-data/
+data/images_roof_centered_geotiff/*.tif
+data/masks_superstructures_reviewed/*.png
+data/masks_pv_modules_only/*.png
