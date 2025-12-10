@@ -1,7 +1,7 @@
 ---
 title: "Few-Shot Learning for Rooftop Detection in Satellite Imagery"
 subtitle: "Deep Learning Tutorial"
-author: "Giorgio Coppala, Nadine Daum, Elena Dreyer, Nico Reichardt"
+author: "Giorgio Coppola, Nadine Daum, Elena Dreyer, Nico Reichardt"
 bibliography: refs.bib
 
 
@@ -68,15 +68,18 @@ format:
 :::
 
 ::: column
-![](figures/grids_animation.gif){width=80% style="margin-left: 30%;"}
+![](figures/grids_animation.gif){width=60% style="margin-left: 30%;"}
+![](figures/Geneva_grid_map.png){width=82% style="margin-left: 30%;"}
+
 :::
 :::
 
 ## Few Shot Learning in General
 
 ### Few-Shot Learning (FSL)
-- Learning new **tasks, labels, or segmentations** from very few labeled examples
-  *(N-way, K-shot)*
+- Learning new **tasks, labels, or segmentations** from very few labeled examples  
+  *(N-way, K-shot)*  
+  
 - **Motivation**:
   - Data scarcity
   - Expensive and time-consuming annotation
@@ -88,23 +91,18 @@ format:
 
 ---
 
-### Prototypical Networks (ProtNets)
-- Learn a shared **embedding space**
+## Prototypical Networks (ProtNets)
+
+- Learn a shared **embedding space** via a backbone model
 - Pixels belonging to the same class are **close in feature space**
 - Class representations are formed as **prototypes**
 - Training follows an **episodic framework**
 - Each episode consists of:
-  - **Support set**:
-    - Few images with **pixel-level masks**
-    - Defines the target classes
-  - **Query image**:
-    - Image where the model must segment the target classes
-
-
-
-
-
-
+  - **Support set**:  
+    Few images with **pixel-level masks**  
+    Defines the target classes
+  - **Query image**:  
+    Image where the model must segment the target classes
 
 ## Prototypical Network Overview
 
@@ -136,13 +134,21 @@ $$
 
 ---
 
-## (Preliminary) Results
+## (Preliminary) Results 
 
-- Show performance for 1-shot / 5-shot / full-data comparison
+**Meta training loss:**  
+The “avg episode loss” at each epoch is the average cross-entropy error over all support–query tasks in that epoch. The encoder is successfully learning a feature space where prototype-based segmentation works increasingly well.
 
-- Show predicted masks
+::: {#fig-meta-training fig-align="center"}
+![](figures/meta_training_loss.png){width=50%}
+:::
+---
 
+## (Preliminary) Results 
+**Show predicted masks:**  
+With 5-shot learning, the predicted masks have a mean IoU over 102 test samples of 0.485. Here an example:  
 
+![](figures/predicted_mask.png){width=60% fig-align="center"}
 
 ## Wrap-Up/ Discussion
 
