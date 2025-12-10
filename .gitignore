@@ -154,7 +154,8 @@ cython_debug/
 data/
 
 .DS_Store
-# raw data
-data/images_roof_centered_geotiff/*.tif
-data/masks_superstructures_reviewed/*.png
-data/masks_pv_modules_only/*.png
+
+# Exclude not needed notebooks files
+notebooks/exploration.ipynb
+notebooks/class_template.ipynb
+notebooks/few_shot_approaches_setup.ipynb
