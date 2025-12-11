@@ -44,7 +44,7 @@ $presentation-h3-font-size: 1.3em;
 // Title slide styling
 .reveal .title-slide {
   text-align: center;
-  
+
   h1.title {
     font-family: $font-family-sans-serif;
     color: $primary-color;
@@ -53,7 +53,7 @@ $presentation-h3-font-size: 1.3em;
     margin-bottom: 0.5em;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
   }
-  
+
   .subtitle {
     font-family: $font-family-sans-serif;
     color: $theme-dark-gray;
@@ -95,12 +95,12 @@ $presentation-h3-font-size: 1.3em;
   margin-left: 1em;
   margin-top: 0em;
   margin-bottom: 0em;
-  
+
   li {
     margin-bottom: 0em;
     line-height: 1.2;
   }
-  
+
   ul, ol {
     margin-top: 0em;
     margin-bottom: 0em;
@@ -116,7 +116,7 @@ $presentation-h3-font-size: 1.3em;
 
 .reveal ul {
   list-style-type: none;
-  
+
   li::before {
     content: "›";
     color: inherit;
@@ -125,17 +125,17 @@ $presentation-h3-font-size: 1.3em;
     margin-left: -1em;
     position: absolute;
   }
-  
+
   ul {
     list-style-type: none;
-    
+
     li::before {
       content: "»";
     }
-    
+
     ul {
       list-style-type: none;
-      
+
       li::before {
         content: "⋙";
       }
@@ -147,7 +147,7 @@ $presentation-h3-font-size: 1.3em;
 .reveal table {
   border-collapse: collapse;
   margin: 1em auto;
-  
+
   th {
     background-color: $secondary-color;
     color: white;
@@ -155,12 +155,12 @@ $presentation-h3-font-size: 1.3em;
     padding: 0.8em 1em;
     border: 1px solid darken($secondary-color, 10%);
   }
-  
+
   td {
     padding: 0.6em 1em;
     border: 1px solid $theme-light-gray;
   }
-  
+
   tr:nth-child(even) {
     background-color: $theme-light-gray;
   }
@@ -172,7 +172,7 @@ $presentation-h3-font-size: 1.3em;
   border: 1px solid $theme-medium-gray;
   border-radius: 4px;
   padding: 1em;
-  
+
   code {
     background-color: transparent;
     color: $text-color;
@@ -245,7 +245,7 @@ $presentation-h3-font-size: 1.3em;
 // Custom classes for specific content
 .course-schedule {
   list-style-type: decimal;
-  
+
   li {
     position: relative;
     padding-left: 0;
@@ -270,7 +270,7 @@ $presentation-h3-font-size: 1.3em;
 .reveal a {
   color: $accent-color;
   text-decoration: underline;
-  
+
   &:hover {
     color: darken($accent-color, 15%);
   }
@@ -292,3 +292,77 @@ $presentation-h3-font-size: 1.3em;
 .flushleft {
    text-align: left;
 }
+
+// -------------------------------------------------
+// Custom two-column layouts: 60/40 and 80/20
+// -------------------------------------------------
+
+// Avoid content (esp. images) being cut off by slide viewport
+.reveal .slides section {
+  overflow: visible;
+}
+
+// Shared base for both layouts
+.reveal .two-col-60-40,
+.reveal .two-col-80-20 {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+// 60/40 layout: more text, less illustration
+.reveal .two-col-60-40 > .col-left {
+  flex: 0 0 60%;
+  min-width: 0;
+}
+
+.reveal .two-col-60-40 > .col-right {
+  flex: 0 0 40%;
+  min-width: 0;
+}
+
+// 80/20 layout: almost full-width text, small illustration
+.reveal .two-col-80-20 > .col-left {
+  flex: 0 0 80%;
+  min-width: 0;
+}
+
+.reveal .two-col-80-20 > .col-right {
+  flex: 0 0 20%;
+  min-width: 0;
+}
+
+// Make sure illustrations scale nicely and are not cut off
+.reveal .two-col-60-40 img,
+.reveal .two-col-80-20 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// On narrow screens, stack columns
+@media (max-width: 900px) {
+  .reveal .two-col-60-40,
+  .reveal .two-col-80-20 {
+    flex-direction: column;
+  }
+
+  .reveal .two-col-60-40 > .col-left,
+  .reveal .two-col-60-40 > .col-right,
+  .reveal .two-col-80-20 > .col-left,
+  .reveal .two-col-80-20 > .col-right {
+    flex: 1 1 100%;
+  }
+}
+
+/* Make references tiny */
+.refs-super-small {
+  font-size: 0.5em !important;
+  line-height: 1.1em !important;
+}
+
+/* Reduce bullet spacing further */
+.refs-super-small li {
+  margin-bottom: 0.15em !important;
+}
+
