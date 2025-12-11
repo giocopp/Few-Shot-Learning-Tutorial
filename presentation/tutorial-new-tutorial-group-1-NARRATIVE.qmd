@@ -1,12 +1,12 @@
 ---
 title: "Few-Shot Learning for Rooftop Detection in Satellite Imagery"
 subtitle: "Deep Learning Tutorial"
-author: "Giorgio Coppola, Nadine Daum, Elena Dreyer, Nico Reichardt"
+author: "Giorgio Coppala, Nadine Daum, Elena Dreyer, Nico Reichardt"
 bibliography: refs.bib
+
 
 resources:
   - img/**
-  - figures/**
 
 format:
   revealjs:
@@ -27,6 +27,7 @@ format:
       - img/**
 ---
 
+
 ## Policy Relevance
 
 - Many public auhorities face the problem of **limited labeled data**
@@ -44,7 +45,10 @@ format:
   - Enables segmentation in a **new city** with *minimal additional annotation*
 
 
+
 ## Problem Setting
+
+::: {.columns}
 
 ::: {.column width="55%"}
 
@@ -59,10 +63,13 @@ rooftop shapes and textures from a small Geneva subset
 :::
 
 ::: {.column width="45%"}
-![](figures/picture_use_case.png){width=90% style="margin-left: 30%;"}
+![](figures/picture_use_case.png){width="100%" style="margin-top: 1rem;"}
+
 <div style="font-size: 0.75rem; color:#666; text-align:center; margin-top:0.2rem;">
 Demonstration use case (self-made visualization)
 </div>
+:::
+
 :::
 
 
@@ -89,87 +96,10 @@ Demonstration use case (self-made visualization)
 Geneva Animation: raw image → overlay rooftop → binary mask
 </div>
 
-## Few Shot Learning in General
-
-### Few-Shot Learning (FSL)
-- Learning new **tasks, labels, or segmentations** from very few labeled examples  
-  *(N-way, K-shot)*  
-  
-- **Motivation**:
-  - Data scarcity
-  - Expensive and time-consuming annotation
-
-### Few-Shot Semantic Segmentation (FSSS)
-- **Goal**: Segment novel object classes using only a few annotated examples
-- Assigning a class label to **every pixel**
-
-
----
-
-## Prototypical Networks (ProtNets)
-
-- Learn a shared **embedding space** via a backbone model
-- Pixels belonging to the same class are **close in feature space**
-- Class representations are formed as **prototypes**
-- Training follows an **episodic framework**
-- Each episode consists of:
-  - **Support set**:  
-    Few images with **pixel-level masks**  
-    Defines the target classes
-  - **Query image**:  
-    Image where the model must segment the target classes
-
-## Prototypical Network Overview
-
-### Workflow
-- Support Image → Prototype → Similarity → Query Segmentation
-
-
-### Feature Extraction
-- **Backbone:** ResNet-18 CNN, pretrained on ImageNet
-- **Projection:** feature maps → embedding dimension (256 channels)
-
-
-### Evaluation Metric
-$$
-\mathrm{IoU} = \frac{|A \cap B|}{|A \cup B|}
-$$
-
-
----
-
-## Prototypical Network Overview
-
-::: {#fig-protnet fig-align="center"}
-![](figures/illustration_prototypical_network.png){width=100%}
-
-*(Modified figure from* [SRPNet](https://arxiv.org/abs/2210.16829)*)*
-:::
-
-
----
-
-## (Preliminary) Results 
-
-**Meta training loss:**  
-The “avg episode loss” at each epoch is the average cross-entropy error over all support–query tasks in that epoch. The encoder is successfully learning a feature space where prototype-based segmentation works increasingly well.
-
-::: {#fig-meta-training fig-align="center"}
-![](figures/meta_training_loss.png){width=50%}
-:::
----
-
-## (Preliminary) Results 
-**Show predicted masks:**  
-With 5-shot learning, the predicted masks have a mean IoU over 102 test samples of 0.485. Here an example:  
-
-![](figures/predicted_mask.png){width=60% fig-align="center"}
-
 
 ## Discussion
 
 **Room for improvement:**
-
 
 - Fine-tune / tweak model parameters
   - Add regularization
@@ -178,28 +108,16 @@ With 5-shot learning, the predicted masks have a mean IoU over 102 test samples 
 - Implement rough approximation of solar potential
   - e.g. based on IoU over roof area
 
-- Play around with different distance metrics 
-  - e.g. Cosine Similarity and Fidelity
-
-- Evaluate different K values and see how they perform
 
 **Open for discussion:**
 
 - Try a different encoder ?
-  - e.g. ResNet-50, ResNet pretrained on satellite images
+  - e.g. ResNet-50
 
 - Change train / test split strategy ?
   - e.g. random shuffle regardless of geographic regions
 
-- Strong 1-shot performance
-  - even with minimal labeled data, results were impressive
 
-- Dataset brought its own challenges 
-  - designed primarily for PV assessment, not general segmentation
-
-- Limited scope: focused only on roofs in Geneva
-  - raises questions of generalizability
-  - more diverse data or complex models could improve performance
 
 <div style="text-align:center; margin-top:3.5em; font-size:1.1em;">
   <a href="https://github.com/hertie-data-science-lab/tutorial-new-tutorial-group-1/tree/main"
@@ -208,6 +126,7 @@ With 5-shot learning, the predicted masks have a mean IoU over 102 test samples 
     GitHub Repo
   </a>
 </div>
+
 
 
 ## References
@@ -240,10 +159,5 @@ With 5-shot learning, the predicted masks have a mean IoU over 102 test samples 
 
 - **Sung, F., Yang, Y., Zhang, L., Xiang, T., Torr, P. H., & Hospedales, T. M.** (2018). Learning to compare: Relation network for few-shot learning. In *CVPR* (pp. 1199–1208). https://doi.org/10.1109/CVPR.2018.00131
 :::
-
-
-
-
-
 
 
