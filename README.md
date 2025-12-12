@@ -7,49 +7,44 @@
 
 ## Author(s)
 
-<div style="display: flex; justify-content: center; align-items: center; gap: 40px;">
+<div align="center">
 
-  <div style="text-align: center;">
-    <a href="https://github.com/elenaivadreyer">
-      <img src="https://github.com/elenaivadreyer.png" width="90" style="border-radius:50%">
-    </a>
-    <br>
-    <sub><b>Elena Dreyer</b></sub>
-    <br>
-    <sub>e.dreyer@students.hertie-school.org</sub>
-  </div>
-
-  <div style="text-align: center;">
-    <a href="https://github.com/giocopp">
-      <img src="https://github.com/giocopp.png" width="90" style="border-radius:50%">
-    </a>
-    <br>
-    <sub><b>Giorgio Coppola</b></sub>
-    <br>
-    <sub>g.coppola@students.hertie-school.org</sub>
-  </div>
-
-  <div style="text-align: center;">
-    <a href="https://github.com/NadineDaum">
-      <img src="https://github.com/NadineDaum.png" width="90" style="border-radius:50%">
-    </a>
-    <br>
-    <sub><b>Nadine Daum</b></sub>
-    <br>
-    <sub>n.daum@students.hertie-school.org</sub>
-  </div>
-
-  <div style="text-align: center;">
-    <a href="https://github.com/nicolasreichardt">
-      <img src="https://github.com/nicolasreichardt.png" width="90" style="border-radius:50%">
-    </a>
-    <br>
-    <sub><b>Nicolas Reichardt</b></sub>
-    <br>
-    <sub>n.reichardt@students.hertie-school.org</sub>
-  </div>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/elenaivadreyer">
+        <img src="https://github.com/elenaivadreyer.png" width="90" style="border-radius:50%">
+      </a><br>
+      <sub><b>Elena Dreyer</b></sub><br>
+      <sub>e.dreyer@students.hertie-school.org</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/giocopp">
+        <img src="https://github.com/giocopp.png" width="90" style="border-radius:50%">
+      </a><br>
+      <sub><b>Giorgio Coppola</b></sub><br>
+      <sub>g.coppola@students.hertie-school.org</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/NadineDaum">
+        <img src="https://github.com/NadineDaum.png" width="90" style="border-radius:50%">
+      </a><br>
+      <sub><b>Nadine Daum</b></sub><br>
+      <sub>n.daum@students.hertie-school.org</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/nicolasreichardt">
+        <img src="https://github.com/nicolasreichardt.png" width="90" style="border-radius:50%">
+      </a><br>
+      <sub><b>Nicolas Reichardt</b></sub><br>
+      <sub>n.reichardt@students.hertie-school.org</sub>
+    </td>
+  </tr>
+</table>
 
 </div>
+
+
 
 
 
