@@ -1,16 +1,52 @@
-# Few-Shot Learning for Rooftop Segmentation in Satellite Imagery <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Hertie_School_of_Governance_logo.svg/1200px-Hertie_School_of_Governance_logo.svg.png" width="200px" align="right" />
+# Few-Shot Learning for Rooftop Segmentation in Satellite Imagery
 
-### GRAD-E1394 Deep Learning
+### GRAD-E1394 Deep Learning <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Hertie_School_of_Governance_logo.svg/1200px-Hertie_School_of_Governance_logo.svg.png" width="150px" align="right"/>
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hertie-data-science-lab/tutorial-new-tutorial-group-1/blob/main/tutorial.ipynb)
 
 
-**Author(s):**
+## Author(s)
 
-- Elena Dreyer [[Email](mailto:e.dreyer@students.hertie-school.org) | [GitHub](https://github.com/elenaivadreyer)]
-- Giorgio Coppola [[Email](mailto:G.Coppola@students.hertie-school.org) | [GitHub](https://github.com/giocopp)]
-- Nadine Daum [[Email](mailto:N.Daum@students.hertie-school.org) | [GitHub](https://github.com/NadineDaum)]
-- Nicolas Reichardt [[Email](mailto:N.Reichardt@students.hertie-school.org) | [GitHub](https://github.com/nicolasreichardt)]
+<div align="center">
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/elenaivadreyer">
+        <img src="https://github.com/elenaivadreyer.png" width="90" style="border-radius:50%">
+      </a><br>
+      <sub><b>Elena Dreyer</b></sub><br>
+      <sub>e.dreyer@students.hertie-school.org</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/giocopp">
+        <img src="https://github.com/giocopp.png" width="90" style="border-radius:50%">
+      </a><br>
+      <sub><b>Giorgio Coppola</b></sub><br>
+      <sub>g.coppola@students.hertie-school.org</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/NadineDaum">
+        <img src="https://github.com/NadineDaum.png" width="90" style="border-radius:50%">
+      </a><br>
+      <sub><b>Nadine Daum</b></sub><br>
+      <sub>n.daum@students.hertie-school.org</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/nicolasreichardt">
+        <img src="https://github.com/nicolasreichardt.png" width="90" style="border-radius:50%">
+      </a><br>
+      <sub><b>Nicolas Reichardt</b></sub><br>
+      <sub>n.reichardt@students.hertie-school.org</sub>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+
+
+
 
 
 ## Tutorial Overview
