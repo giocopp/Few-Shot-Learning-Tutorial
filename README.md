@@ -99,6 +99,7 @@ Either have a quick walk through the tutorial notebook or watch the video tutori
 
 ## References
 
+
 - Alsentzer, E., Li, M. M., Kobren, S. N., Noori, A., Undiagnosed Diseases Network, Kohane, I. S., & Zitnik, M. (2025). Few shot learning for phenotype-driven diagnosis of patients with rare genetic diseases. *npj Digital Medicine, 8*(1), 380. [https://doi.org/10.1038/s41746-025-01749-1](https://doi.org/10.1038/s41746-025-01749-1)
 
 - Castello, R., Walch, A., Attias, R., Cadei, R., Jiang, S., & Scartezzini, J.-L. (2021). Quantification of the suitable rooftop area for solar panel installation from overhead imagery using convolutional neural networks. *Journal of Physics: Conference Series, 2042*(1), 012002. [https://doi.org/10.1088/1742-6596/2042/1/012002](https://doi.org/10.1088/1742-6596/2042/1/012002)
@@ -121,4 +122,12 @@ Either have a quick walk through the tutorial notebook or watch the video tutori
 
 - Puthumanaillam, G., & Verma, U. (2023). Texture based prototypical network for few-shot semantic segmentation of forest cover: Generalizing for different geographical regions. *Neurocomputing, 538*, 126201. [https://doi.org/10.1016/j.neucom.2023.03.062](https://doi.org/10.1016/j.neucom.2023.03.062)
 
+- Shaban, A., Bansal, S., Liu, Z., Essa, I., & Boots, B. (2017). One-shot learning for semantic segmentation. *BMVC.* [https://doi.org/10.48550/arXiv.1709.03410](https://doi.org/10.48550/arXiv.1709.03410)
+
+- Snell, J., Swersky, K., & Zemel, R. (2017). Prototypical networks for few-shot learning. *Advances in Neural Information Processing Systems (NeurIPS 2017), Vol. 30.* [https://doi.org/10.48550/arXiv.1703.05175](https://doi.org/10.48550/arXiv.1703.05175)
+
 - Sung, F., Yang, Y., Zhang, L., Xiang, T., Torr, P. H., & Hospedales, T. M. (2018). Learning to compare: Relation network for few-shot learning. In *Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition* (pp. 1199–1208). [https://doi.org/10.1109/CVPR.2018.00131](https://doi.org/10.1109/CVPR.2018.00131)
+
+- Tian, Z., Zhao, H., Shu, M., Yang, Z., Li, R., & Jia, J. (2020). Prior guided feature enrichment network for few-shot segmentation. *IEEE TPAMI, 44*(2), 1050–1065. [https://doi.org/10.1109/TPAMI.2020.3013717](https://doi.org/10.1109/TPAMI.2020.3013717)
+
+- Wang, K., Liew, J. H., Zou, Y., Zhou, D., & Feng, J. (2019). PANet: Few-shot image semantic segmentation with prototype alignment. *ICCV.* [https://doi.org/10.48550/arXiv.1908.06391](https://doi.org/10.48550/arXiv.1908.06391)
