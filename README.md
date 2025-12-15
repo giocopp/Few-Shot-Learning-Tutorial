@@ -5,7 +5,7 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hertie-data-science-lab/tutorial-new-tutorial-group-1/blob/main/tutorial.ipynb)
 
 
-## Author(s)
+## Authors
 
 <div align="center">
 
@@ -46,9 +46,6 @@
 
 
 
-
-
-
 ## Tutorial Overview
 
 This tutorial introduces few-shot learning techniques for semantic segmentation in satellite imagery using high-resolution images from Geneva, Switzerland. We will demonstrate how Prototypical Networks can learn meaningful rooftop representations from only a few labeled examples and generalize to new geographic areas with minimal annotation effort.
@@ -79,15 +76,9 @@ The dataset being used for the demonstration of this tutorial consists of:
 - **Satellite Images**: High-resolution RGB satellite images of Geneva, Switzerland
 - **Segmentation Labels**: Binary masks indicating rooftop locations
 
-## Quick Start
+## Quick Start Guide
 
-Either have a quick walk through the tutorial notebook or watch the video tutorial below to get started!
-
-### 📓 Tutorial Notebook
-
-**[View Tutorial Notebook (HTML)](tutorial.html)**  
-**[View Tutorial Notebook (ipynb)](tutorial.ipynb)**  
-**[View Tutorial Notebook in Colab](https://colab.research.google.com/github/hertie-data-science-lab/tutorial-new-tutorial-group-1/blob/main/tutorial.ipynb)**  
+Either start by watching the video tutorial or jump straight into running the tutorial notebook.
 
 ### 📹 Video Tutorial
 
@@ -95,6 +86,72 @@ Either have a quick walk through the tutorial notebook or watch the video tutori
 [![Tutorial Video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
 
 *Click the image above to watch the tutorial video*
+
+### 🏃‍♀️ Running the Tutorial
+
+To run the tutorial, you can either use Google Colab or set up a local environment.
+
+### Google Colab
+---
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hertie-data-science-lab/tutorial-new-tutorial-group-1/blob/main/tutorial.ipynb)
+
+### Local Setup
+---
+
+#### Option 1: Using the Containerized Setup (Recommended)
+1. **Install prerequisites**:
+   - [Docker](https://www.docker.com/get-started)
+   - [VS Code](https://code.visualstudio.com/) with the [Dev Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+
+2. **Clone the repository**:
+   ```bash
+   git clone https://github.com/hertie-data-science-lab/tutorial-new-tutorial-group-1.git
+   cd tutorial-new-tutorial-group-1
+   ```
+
+3. **Open in VS Code**:
+   ```bash
+   code .
+   ```
+
+4. **Reopen in Container** (when prompted by VS Code).
+   This will set up all dependencies automatically in the devcontainer environment.
+
+
+#### Option 2: Non-Containerized Setup
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/hertie-data-science-lab/tutorial-new-tutorial-group-1.git
+   cd tutorial-new-tutorial-group-1
+   ```
+
+2. **Set up a virtual environment**:
+   ```bash
+   python3.11 -m venv .venv
+   source .venv/bin/activate
+   ```
+
+3. **Install dependencies**:
+   Using `pyproject.toml`:
+   ```bash
+   pip install .
+   ```
+   Or, using `requirements.txt`:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run the tutorial notebook**:
+   ```bash
+   pip install jupyter
+   jupyter notebook
+   ```
+   Open `tutorial.ipynb` and start coding!
+
+
+Tips:
+- For Jupyter support, ensure `ipykernel` and `nbformat` are installed.
 
 
 ## References
