@@ -151,9 +151,7 @@ To run the tutorial, you can either use Google Colab or set up a local environme
 Tips:
 - For Jupyter support, ensure `ipykernel` and `nbformat` are installed.
 
-
 ## References
-
 
 - Alsentzer, E., Li, M. M., Kobren, S. N., Noori, A., Undiagnosed Diseases Network, Kohane, I. S., & Zitnik, M. (2025). Few shot learning for phenotype-driven diagnosis of patients with rare genetic diseases. *npj Digital Medicine, 8*(1), 380. [https://doi.org/10.1038/s41746-025-01749-1](https://doi.org/10.1038/s41746-025-01749-1)
 
@@ -186,3 +184,8 @@ Tips:
 - Tian, Z., Zhao, H., Shu, M., Yang, Z., Li, R., & Jia, J. (2020). Prior guided feature enrichment network for few-shot segmentation. *IEEE TPAMI, 44*(2), 1050–1065. [https://doi.org/10.1109/TPAMI.2020.3013717](https://doi.org/10.1109/TPAMI.2020.3013717)
 
 - Wang, K., Liew, J. H., Zou, Y., Zhou, D., & Feng, J. (2019). PANet: Few-shot image semantic segmentation with prototype alignment. *ICCV.* [https://doi.org/10.48550/arXiv.1908.06391](https://doi.org/10.48550/arXiv.1908.06391)
+
+
+## License
+
+The material in this repository is made available under the [MIT license](http://opensource.org/licenses/mit-license.php). 
